@@ -135,7 +135,6 @@ switch($channel){
 }
 $opt=request_post("https://tools.google.com/service/update2",$data) ;
 $x=Put_Data($opt);
-echo $opt;
 if($mode=="debug"){
     $x['debuginfo']=$channel."-".$ver;
     print_r($x);
